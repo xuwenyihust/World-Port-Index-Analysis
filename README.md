@@ -1,1 +1,42 @@
 # World-Port-Index-Analysis
+
+## Summary
+
+- Question 1
+  - [question_1.py](src/question_1.py)
+- Question 2
+  - [question_2.py](src/question_2.py)
+- Question 3
+  - [question_3.py](src/question_3.py)
+- Question 4
+  - a
+    - Re-constructing the existing code base, in accommodate with the new requirements or resolve historical issues.
+    - It should be down whenever 
+      - You found the existing code structure very hard to extend / test
+      - It's affecting the efficiency of you and other colleagues 
+      - You feel confident touching that code base if not originally written by you
+      - No other top priority business development working pending
+  - b
+    - Check if the code runs as you expected
+    - When
+      - You expect to revisit this piece of code in the future
+      - Part of a serious project
+      - You'd like to be more confident about what you just wrote down
+    - Why
+      - Checks whether the code works as expected under some cases 
+      - If written ahead of actual code written, could help yourself better organize what to do
+      - Explains more explicitly about your think flow
+- Question 5
+  - Structure
+    - .github
+      - *github related CI/CD stuffs*
+    - docs
+      - *Very detailed & interactive documents*
+    - fastapi
+      - *Source code organized by components*
+    - scripts
+      - *Shell / Python scripts for tests / env / docs / CI/CD*
+    - tests
+      - *Test code*
+  - Possible improvements
+    - fastapi folder could be better organized, for example the exception handling & logging utils are mixed with requests/responses.
