@@ -6,9 +6,9 @@ def main():
     ports = pd.read_csv("./data/world_port_index.csv")
     ports_with_cargo_wharf = ports[ports["cargo_wharf"] == True]
 
-    ports_with_cargo_wharf_per_country = ports_with_cargo_wharf\
-        .groupby(["country"])\
-        .size()\
+    ports_with_cargo_wharf_per_country = ports_with_cargo_wharf \
+        .groupby(["country"]) \
+        .size() \
         .reset_index(name='port_count')
 
     res = ports_with_cargo_wharf_per_country[ports_with_cargo_wharf_per_country['port_count'] ==
